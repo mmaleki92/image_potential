@@ -7,4 +7,4 @@ We will start with the image representation of an atomistic environment, impleme
 
 in Ryczko K, Mills K, Luchak I, Homenick C, Tamblyn I. Convolutional neural networks for atomistic systems. Computational Materials Science. 2018 Jun 15;149:134-42.
 
-![Alt text](images/img.png?raw=true "Title")
+![Alt text](images/graphene_image.png?raw=true "Title")
