@@ -4,6 +4,7 @@ When we want to take advantage of a neural network to construct a potential ener
 In this repository, we aim to reproduce those representations (which from now on, we will use the name fingerprints for them), and we will try to use different architectures of neural networks to get good accuracy and generalization.
 
 ##image method
+
 We will start with the image representation of an atomistic environment, implemented in the below article:
 
 in Ryczko K, Mills K, Luchak I, Homenick C, Tamblyn I. Convolutional neural networks for atomistic systems. Computational Materials Science. 2018 Jun 15;149:134-42.
