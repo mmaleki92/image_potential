@@ -39,6 +39,49 @@ and the result will be something like this image:
 
 Suppose that we had converted our atomistic environment to an image (in our case 2D image of graphene), and we already had a sufficient amount of that data. We can then feed those images to the neural network (in our case, Convolutional Neural Network or only CNN). We here take advantage of Keras (with TensorFlow backend). The NN model will be like the following:
 
+```python
+def model_paper():
+  model = Sequential()
+
+  model.add(Conv2D(input_shape=(256,256,1),filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1,padding="same", activation="relu"))
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1 ,padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1,padding="same", activation="relu"))
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1 ,padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1,padding="same", activation="relu"))
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1 ,padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1,padding="same", activation="relu"))
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1 ,padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1,padding="same", activation="relu"))
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1 ,padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1,padding="same", activation="relu"))
+  model.add(Conv2D(filters=16,kernel_size=(4,4),strides= 1 ,padding="same", activation="relu"))
+
+  model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2),padding="same", activation="relu"))
+
+  model.add(Flatten())
+  model.add(Dense(units=1024,activation="relu"))
+
+  model.add(Dense(units = 1, activation="linear"))
+
+  return model
+```
 
 
 ## References
