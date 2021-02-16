@@ -1,3 +1,5 @@
+This repository is an in-progress project, and here I will edit it regularly. My purpose is to collect articles in this manner and reproduce their way of tackling this problem. Stay tone!
+
 # neural network potentials
 When we want to take advantage of a neural network to construct a potential energy surface (how atoms see their neighbors! and interact with them), we should consider the physical system symmetries. We already know that we should take translation, rotation, permutation, and reflection symmetry for a problem such as potential energy into account. People already did different works for tackling these symmetry things. Still, the problem is already out there (and that is the reason why we every day see a lot of creative ways of representing molecular configurations for machine learning).
 
