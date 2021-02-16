@@ -1,4 +1,3 @@
-```python
 
 def model_paper():
   model = Sequential()
@@ -41,4 +40,3 @@ def model_paper():
   model.add(Dense(units = 1, activation="linear"))
 
   return model
-```
