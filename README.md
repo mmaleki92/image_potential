@@ -40,8 +40,6 @@ and the result will be something like this image:
 Suppose that we had converted our atomistic environment to an image (in our case 2D image of graphene), and we already had a sufficient amount of that data. We can then feed those images to the neural network (in our case, Convolutional Neural Network or only CNN). We here take advantage of Keras (with TensorFlow backend). The NN model will be like the following:
 
 
-{5:12}(codes/image.py)
-
 
 ## References
 <a id="1">[1]</a> 
