@@ -8,6 +8,8 @@ We will start with the image representation of an atomistic environment, impleme
 
 
 ```python
+#converting atomistic systems to images, here we just created on point (with positions x and y)
+
 import numpy as np
 
 a = 5
@@ -15,10 +17,10 @@ num = 2
 pos_x = np.random.rand(num)
 pos_y = np.random.rand(num)
 
+#number of pixeles in image
 grid = 256
 points = np.linspace(0, a, grid)
 
-pos_x,pos_y
 
 X, Y = np.meshgrid(points, points)
 image = np.zeros((grid, grid))
